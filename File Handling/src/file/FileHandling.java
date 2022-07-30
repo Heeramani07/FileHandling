@@ -14,17 +14,17 @@ public class FileHandling {
 		System.out.println("The file already exists: "+obj.getName());}
 		//Write to a File
 		FileWriter obj2 = new FileWriter("File.txt");
-		obj2.write("Created a File using File handeling in java\n");
+		obj2.write("Created a File using File handling in java\n");
 		//obj2.close();
 		System.out.println("You have successfully wrote in your file");
 		//Append to a file
 		@SuppressWarnings("unused")
 		String path = System.getProperty("user.dir")+"\\File.txt";
-		String Text = "Append using File Handleing was done.";
+		String Text = "Append using File Handling was done.";
 		//Files.write(Paths.get(path), Text.getBytes(),StandardOpenOption.APPEND);
 		obj2.write(Text);
 		obj2.close();
-		System.out.println("Your File was was successfully appended.\n");
+		System.out.println("Your File was successfully appended.\n");
 
 		//Read a file
 		System.out.println("Read file:");
